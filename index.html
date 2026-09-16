@@ -119,15 +119,21 @@ header{
 
 
 .contact{
-
     text-align:right;
-
     font-size:14px;
-
     line-height:2;
-
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
 }
 
+.profile-photo{
+    width:120px;
+    height:150px;
+    object-fit:cover;
+    border-radius:6px;
+    margin-bottom:15px;
+}
 
 
 /* language button */
@@ -429,21 +435,21 @@ English
 
 <div class="contact">
 
+<img src="images/profile.jpg"
+     alt="Liu Jiaxiang"
+     class="profile-photo">
 
 <div>
 📍 Shanghai, China
 </div>
 
-
 <div>
 📧 liujiaxiang@stu.xmu.edu.cn
 </div>
 
-
 <div>
 🎓 Fudan University
 </div>
-
 
 </div>
 
