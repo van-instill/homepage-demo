@@ -2,367 +2,1432 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Liu Jiaxiang | Personal Homepage</title>
 
+
 <style>
 
 *{
+    box-sizing:border-box;
     margin:0;
     padding:0;
-    box-sizing:border-box;
-    font-family: "Arial","Microsoft YaHei",sans-serif;
 }
+
 
 body{
-    background:#f5f7fb;
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+
+    background:#f5f7fa;
+
     color:#333;
+
+    line-height:1.7;
 }
+
+
 
 .container{
-    width:85%;
+
+    width:90%;
+
     max-width:1000px;
-    margin:40px auto;
+
+    margin:auto;
+
 }
+
+
+
+/* Header */
 
 header{
+
     background:#1f3c88;
+
     color:white;
-    padding:40px;
-    border-radius:15px;
+
+    padding:60px 0;
+
 }
 
-header h1{
-    font-size:36px;
+
+
+.header-content{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
 }
 
-header p{
-    margin-top:10px;
+
+
+.intro h1{
+
+    font-size:42px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.intro h2{
+
+    font-size:20px;
+
+    font-weight:normal;
+
+    opacity:0.9;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.intro p{
+
+    max-width:650px;
+
     font-size:16px;
+
 }
 
-.lang{
-    margin-top:20px;
+
+
+.contact{
+
+    text-align:right;
+
+    font-size:14px;
+
+    line-height:2;
+
 }
 
-button{
-    padding:8px 18px;
-    margin-right:10px;
-    border:none;
-    border-radius:20px;
-    cursor:pointer;
-}
 
-.card{
-    background:white;
+
+/* language button */
+
+
+.language-switch{
+
     margin-top:25px;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
 }
 
-.card h2{
+
+
+.language-switch button{
+
+    border:none;
+
+    padding:8px 18px;
+
+    margin-right:10px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+
+
+.language-switch button:hover{
+
+    opacity:0.85;
+
+}
+
+
+
+/* Main */
+
+
+main{
+
+    padding:40px 0;
+
+}
+
+
+
+section{
+
+    background:white;
+
+    padding:30px 35px;
+
+    margin-bottom:25px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 2px 10px rgba(0,0,0,0.05);
+
+}
+
+
+
+section h2{
+
     color:#1f3c88;
-    margin-bottom:15px;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+    border-left:5px solid #1f3c88;
+
+    padding-left:12px;
+
 }
 
-.card p,li{
-    line-height:1.8;
+
+
+.item{
+
+    margin-bottom:22px;
+
 }
+
+
+
+.item-title{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#222;
+
+}
+
+
+
+.item-meta{
+
+    color:#777;
+
+    font-size:14px;
+
+    margin:3px 0 8px;
+
+}
+
+
+
+.item p{
+
+    font-size:15px;
+
+    color:#555;
+
+}
+
+
 
 ul{
-    padding-left:20px;
+
+    padding-left:22px;
+
 }
 
+
+li{
+
+    margin-bottom:6px;
+
+    color:#555;
+
+}
+
+
+
+.highlight{
+
+    color:#1f3c88;
+
+    font-weight:bold;
+
+}
+
+
+
+/* skills */
+
+
+.tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+
+
+.tag{
+
+    background:#eef3ff;
+
+    color:#1f3c88;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:14px;
+
+}
+
+
+
+/* footer */
+
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#888;
+
+}
+
+
+
+/* mobile */
+
+
+@media(max-width:700px){
+
+
+.header-content{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+
+.contact{
+
+    text-align:left;
+
+}
+
+
+.intro h1{
+
+    font-size:34px;
+
+}
+
+
+section{
+
+    padding:25px 20px;
+
+}
+
+
+}
+
+
 </style>
+
 
 </head>
 
 
-<body>
 
-<div class="container">
+<body>
 
 
 <header>
+
+
+<div class="container header-content">
+
+
+<div class="intro">
+
 
 <h1 id="name">
 Liu Jiaxiang
 </h1>
 
-<p id="title">
-Finance Graduate Student | Financial Engineering
+
+
+<h2 id="subtitle">
+Finance Graduate Student | Fudan University
+</h2>
+
+
+
+<p id="header-intro">
+
+Master's student in Finance at the School of Economics,
+Fudan University. Research interests include financial
+markets, corporate finance, financial econometrics and
+time series analysis.
+
 </p>
 
-<p id="school">
-School of Economics, Fudan University
-</p>
 
 
-<div class="lang">
+<div class="language-switch">
 
-<button onclick="changeLang('en')">
+<button onclick="switchLanguage('en')">
 English
 </button>
 
-<button onclick="changeLang('zh')">
-Chinese
+
+<button onclick="switchLanguage('zh')">
+中文
 </button>
 
+
 </div>
+
+
+</div>
+
+
+
+<div class="contact">
+
+
+<div>
+📍 Shanghai, China
+</div>
+
+
+<div>
+📧 liujiaxiang@stu.xmu.edu.cn
+</div>
+
+
+<div>
+🎓 Fudan University
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </header>
 
 
 
-<div class="card">
+<main class="container">
+
+<!-- About Me -->
+
+<section>
 
 <h2 id="about-title">
 About Me
 </h2>
 
-<p id="about">
-I am a master's student in Finance at the School of Economics, Fudan University.
-My research interests include financial analysis, corporate finance, econometrics and data-driven decision making.
+
+<p id="about-text">
+
+I am currently pursuing a Master's degree in Finance at the School of Economics, Fudan University.
+<br>
+I received my Bachelor's degree in Finance from the School of Economics, Xiamen University.
+<br>
+During my undergraduate study, I achieved a major ranking of 2/79 and was awarded the National Scholarship for two consecutive years.
+<br>
+My research interests mainly focus on financial markets, corporate finance, financial econometrics, and time series analysis.
+
 </p>
 
-</div>
+
+</section>
 
 
 
 
-<div class="card">
+
+<!-- Education -->
+
+<section>
+
 
 <h2 id="education-title">
 Education
 </h2>
 
-<ul id="education">
 
-<li>
-Fudan University, School of Economics
-<br>
-Master's Student in Finance (2026 - Present)
-</li>
 
-<li>
-Xiamen University, School of Economics
-<br>
-Bachelor of Finance (2022 - 2026)
-</li>
+<div class="item">
 
-</ul>
+
+<div class="item-title" id="edu1-title">
+
+Fudan University · School of Economics
+
+</div>
+
+
+<div class="item-meta" id="edu1-meta">
+
+Master's Student in Finance · 2026 – Present
+
+</div>
+
+
+<p id="edu1-text">
+
+Graduate study in finance with interests in financial markets,
+corporate finance, financial econometrics and quantitative research.
+
+</p>
+
 
 </div>
 
 
 
 
-<div class="card">
 
-<h2 id="experience-title">
-Academic & Leadership Experience
+<div class="item">
+
+
+<div class="item-title" id="edu2-title">
+
+Xiamen University · School of Economics
+
+</div>
+
+
+<div class="item-meta" id="edu2-meta">
+
+Bachelor of Finance · Sep 2022 – Jun 2026
+
+</div>
+
+
+<p id="edu2-text">
+
+GPA:
+<span class="highlight">3.95/4.00</span>
+<br>
+
+Major Ranking:
+<span class="highlight">2/79</span>
+<br>
+
+Weighted Average:
+<span class="highlight">92.56</span>
+<br>
+
+CET-6:
+<span class="highlight">561</span>
+
+</p>
+
+
+
+<p id="course-text">
+
+Selected courses:
+Financial Engineering, Econometrics,
+Mathematical Finance, Financial Statement Analysis,
+International Finance and Principles of Economics.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- Research Experience -->
+
+
+<section>
+
+
+<h2 id="research-title">
+
+Research Experience
+
 </h2>
 
-<ul id="experience">
 
-<li>
-Class Monitor of Finance Class 1, School of Economics, Xiamen University (2023-2026)
-</li>
 
-<li>
-Ranked 2nd in the undergraduate major and awarded National Scholarship for two consecutive years.
-</li>
+<div class="item">
 
-<li>
-Participated in research training and financial analysis projects.
-</li>
 
-</ul>
+<div class="item-title" id="research1-title">
+
+Venture Capital and Corporate Financialization
+
+</div>
+
+
+<div class="item-meta" id="research1-meta">
+
+Independent Research · Unpublished
+
+</div>
+
+
+
+<p id="research1-text">
+
+An empirical study based on Chinese listed firms from 2010–2023.
+The research examines how venture capital affects corporate financialization
+through financing constraints, innovation capability and managerial myopia.
+
+<br><br>
+
+Conducted robustness tests, endogeneity analysis and heterogeneity analysis.
+
+</p>
+
 
 </div>
 
 
 
 
-<div class="card">
 
-<h2 id="awards-title">
+
+<div class="item">
+
+
+<div class="item-title" id="research2-title">
+
+Fujian High-Quality Development Research Project
+
+</div>
+
+
+<div class="item-meta" id="research2-meta">
+
+State Grid Fujian Electric Power Company · Mar 2025 – Jul 2025
+
+</div>
+
+
+
+<p id="research2-text">
+
+Participated in a provincial-level research project using electricity
+consumption data to construct high-quality development indicators
+for Fujian Province and analyze regional economic development.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Internship -->
+
+
+<section>
+
+
+<h2 id="intern-title">
+
+Internship Experience
+
+</h2>
+
+
+
+
+<div class="item">
+
+
+<div class="item-title" id="intern1-title">
+
+China Everbright Securities · Non-Banking Financial Team
+
+</div>
+
+
+
+<div class="item-meta" id="intern1-meta">
+
+Intern · Feb 2025 – May 2025
+
+</div>
+
+
+
+<ul id="intern1-text">
+
+<li>
+Analyzed the causes of Sun Life Everbright's 2024 losses
+from a revenue-expenditure perspective.
+</li>
+
+<li>
+Conducted analysis of asset classification under IFRS 9
+and provided recommendations on investment and accounting.
+</li>
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="item">
+
+
+<div class="item-title" id="intern2-title">
+
+Northeast Securities · Food & Beverage Team
+
+</div>
+
+
+
+<div class="item-meta" id="intern2-meta">
+
+Intern · Nov 2024 – Feb 2025
+
+</div>
+
+
+
+
+<ul id="intern2-text">
+
+
+<li>
+Completed an in-depth research report on Uni-President China Holdings Ltd.
+</li>
+
+
+<li>
+Analyzed financial performance, industry trends,
+brand value, product portfolio and distribution channels.
+</li>
+
+
+<li>
+Conducted company valuation and investment research.
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item">
+
+
+<div class="item-title" id="intern3-title">
+
+Agricultural Bank of China · Gusu Branch
+
+</div>
+
+
+<div class="item-meta" id="intern3-meta">
+
+Corporate Finance Department · Jan 2024 – Feb 2024
+
+</div>
+
+
+
+<p id="intern3-text">
+
+Participated in due diligence and evaluation reports for corporate loan clients,
+including equity analysis, financial statement analysis and compliance analysis.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Competitions -->
+
+
+<section>
+
+
+<h2 id="competition-title">
+
 Honors & Competitions
+
 </h2>
 
-<ul id="awards">
 
-<li>
-National Third Prize, 14th "Challenge Cup" Market Research and Analysis Competition (2024)
-</li>
 
-<li>
-First Prize, Fujian Undergraduate Mathematical Modeling Competition (2024)
-</li>
 
-<li>
-Second Prize, 15th "Challenge Cup" Market Research and Analysis Competition (2025)
-</li>
+<div class="item">
 
-</ul>
+
+<div class="item-title">
+
+China Undergraduate Mathematical Contest in Modeling
 
 </div>
 
 
 
-<div class="card">
+<div class="item-meta">
+
+Provincial First Prize · 2024
+
+</div>
+
+
+
+<p id="competition1-text">
+
+Built a multi-stage optimal crop planting strategy using
+Mixed Integer Programming and robust optimization.
+Responsible for mathematical modeling and final paper writing.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="item">
+
+
+<div class="item-title">
+
+National College Student Market Research and Analysis Competition
+
+</div>
+
+
+
+<div class="item-meta">
+
+National Third Prize · Team Leader · 2024
+
+</div>
+
+
+
+<p id="competition2-text">
+
+Conducted interviews and questionnaire analysis to study
+the pet funeral market in Xiamen.
+Responsible for topic selection, presentation,
+sampling design and data quality checks.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Social Practice -->
+
+
+<section>
+
 
 <h2 id="practice-title">
-Social Practice
+
+Social Practice & Volunteering
+
 </h2>
 
-<p id="practice">
 
-Participated in a summer teaching program in Longde, Ningxia.
-The team received several honors including the Excellent Team Award of "Three Rural Areas" Social Practice.
+
+
+<div class="item">
+
+
+<div class="item-title">
+
+"Heron & Child: Together on the Journey"
+
+</div>
+
+
+<div class="item-meta">
+
+Longde County, Ningxia · Jul 2023
+
+</div>
+
+
+
+<p id="practice-text">
+
+Participated in a summer public education program in Longde County,
+Ningxia.
+
+Responsibilities included teaching, ceremony planning,
+procurement and financial reimbursement.
+
+The team received the National "Three Goes to the Countryside"
+Excellent Video Team Award.
+
 </p>
 
 
 </div>
 
 
+</section>
 
-<div class="card">
 
-<h2 id="interest-title">
-Research Interests
+
+
+
+
+
+
+<!-- Campus -->
+
+
+<section>
+
+
+<h2 id="campus-title">
+
+Campus Involvement
+
 </h2>
 
-<p id="interest">
 
-Corporate Finance, Financial Markets, Econometrics,
-Artificial Intelligence Applications in Finance, and Data Analysis.
+
+
+<div class="item">
+
+
+<div class="item-title">
+
+Class Monitor · Finance Class 1, Class of 2022
+
+</div>
+
+
+
+<div class="item-meta">
+
+Xiamen University · Sep 2023 – Jun 2026
+
+</div>
+
+
+
+
+<p id="campus-text">
+
+Organized class activities, assisted with scholarship and
+financial aid affairs, and facilitated communication
+between students and faculty.
+
 </p>
 
-</div>
 
 
 </div>
 
 
 
+</section>
+
+
+
+
+
+
+
+<!-- Skills -->
+
+
+<section>
+
+
+<h2 id="skill-title">
+
+Research Interests & Skills
+
+</h2>
+
+
+<div class="tags">
+
+
+<span class="tag">
+Financial Markets
+</span>
+
+
+<span class="tag">
+Corporate Finance
+</span>
+
+
+<span class="tag">
+Financial Econometrics
+</span>
+
+
+<span class="tag">
+Time Series Analysis
+</span>
+
+
+<span class="tag">
+Investment Research
+</span>
+
+
+<span class="tag">
+Mathematical Modeling
+</span>
+
+
+<span class="tag">
+Data Analysis
+</span>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+<footer>
+
+© 2026 Liu Jiaxiang · Personal Homepage
+
+</footer>
 
 <script>
 
 
-function changeLang(lang){
+function switchLanguage(lang){
 
 
-if(lang==="zh"){
+if(lang === "zh"){
 
 
-document.getElementById("name").innerHTML="刘佳翔";
 
-document.getElementById("title").innerHTML=
-"金融硕士研究生 | 金融工程方向";
+// Header
 
-document.getElementById("school").innerHTML=
+document.getElementById("name").innerHTML =
+"刘佳翔";
+
+
+document.getElementById("subtitle").innerHTML =
+"复旦大学经济学院金融硕士研究生";
+
+
+document.getElementById("header-intro").innerHTML =
+"目前就读于复旦大学经济学院金融专硕项目。研究兴趣主要集中于金融市场、公司金融、金融计量以及时间序列分析。";
+
+
+
+
+
+// About
+
+document.getElementById("about-title").innerHTML =
+"个人简介";
+
+
+document.getElementById("about-text").innerHTML =
+
+`
+我目前就读于复旦大学经济学院金融专硕项目。
+<br>
+本科毕业于厦门大学经济学院金融学专业。
+<br>
+本科期间专业排名第2/79，连续两年获得国家奖学金。
+<br>
+研究兴趣主要集中于金融市场、公司金融、金融计量以及时间序列分析。
+`;
+
+
+
+
+
+// Education
+
+
+document.getElementById("education-title").innerHTML =
+"教育经历";
+
+
+document.getElementById("edu1-title").innerHTML =
 "复旦大学经济学院";
 
 
-document.getElementById("about-title").innerHTML="个人简介";
-
-document.getElementById("about").innerHTML=
-"我目前就读于复旦大学经济学院金融硕士项目。本科毕业于厦门大学经济学院金融学专业。研究兴趣主要集中于金融分析、公司金融、计量经济学以及数据驱动的金融决策。";
+document.getElementById("edu1-meta").innerHTML =
+"金融硕士研究生 · 2026年至今";
 
 
-document.getElementById("education-title").innerHTML="教育经历";
+document.getElementById("edu1-text").innerHTML =
+"围绕金融市场、公司金融、金融计量以及量化研究开展研究学习。";
 
-document.getElementById("education").innerHTML=
+
+
+document.getElementById("edu2-title").innerHTML =
+"厦门大学经济学院";
+
+
+document.getElementById("edu2-meta").innerHTML =
+"金融学本科 · 2022年9月 - 2026年6月";
+
+
+document.getElementById("edu2-text").innerHTML =
+
+`
+GPA：
+<span class="highlight">3.95/4.00</span>
+<br>
+
+专业排名：
+<span class="highlight">2/79</span>
+
+<br>
+
+加权平均成绩：
+<span class="highlight">92.56</span>
+
+<br>
+
+大学英语六级：
+<span class="highlight">561</span>
+
+`;
+
+
+
+document.getElementById("course-text").innerHTML =
+"主要课程：金融工程、计量经济学、数学金融、财务报表分析、国际金融以及经济学原理。";
+
+
+
+
+
+
+// Research
+
+
+document.getElementById("research-title").innerHTML =
+"科研经历";
+
+
+
+document.getElementById("research1-title").innerHTML =
+"风险投资与企业金融化研究";
+
+
+document.getElementById("research1-meta").innerHTML =
+"独立研究";
+
+
+document.getElementById("research1-text").innerHTML =
+
+`
+基于2010—2023年中国上市公司数据，
+研究风险投资对企业金融化水平的影响机制。
+<br><br>
+
+从融资约束、创新能力以及管理层短视等渠道展开机制分析，
+并完成稳健性检验、内生性分析以及异质性分析。
+`;
+
+
+
+
+document.getElementById("research2-title").innerHTML =
+"福建省高质量发展研究项目";
+
+
+document.getElementById("research2-meta").innerHTML =
+"国网福建省电力有限公司 · 2025年3月—2025年7月";
+
+
+document.getElementById("research2-text").innerHTML =
+
+`
+参与省级研究项目，利用用电数据构建福建省高质量发展指标体系，
+分析区域经济发展特征。
+`;
+
+
+
+
+
+
+
+// Internship
+
+
+document.getElementById("intern-title").innerHTML =
+"实习经历";
+
+
+
+document.getElementById("intern1-title").innerHTML =
+"光大证券股份有限公司 · 非银金融组";
+
+
+document.getElementById("intern1-meta").innerHTML =
+"实习生 · 2025年2月—2025年5月";
+
+
+document.getElementById("intern1-text").innerHTML =
+
 `
 <li>
-复旦大学经济学院<br>
-金融硕士研究生（2026年至今）
+分析光大永明2024年亏损原因，
+从收入与成本角度进行拆解。
 </li>
 
 <li>
-厦门大学经济学院<br>
-金融学本科（2022-2026）
+研究IFRS 9金融资产分类规则，
+提出投资及会计处理建议。
 </li>
 `;
 
 
-document.getElementById("experience-title").innerHTML=
-"学术与学生工作经历";
+
+document.getElementById("intern2-title").innerHTML =
+"东北证券股份有限公司 · 食品饮料组";
 
 
-document.getElementById("experience").innerHTML=
+document.getElementById("intern2-meta").innerHTML =
+"实习生 · 2024年11月—2025年2月";
+
+
+document.getElementById("intern2-text").innerHTML =
+
 `
 <li>
-担任厦门大学经济学院金融学一班班长（2023-2026）
+完成统一企业中国深度研究报告。
 </li>
 
 <li>
-本科专业排名第2，连续两年获得国家奖学金
+分析公司财务表现、行业趋势、
+品牌价值以及渠道体系。
 </li>
 
 <li>
-参与金融研究、数据分析及学科竞赛等实践活动
+开展公司估值与投资分析。
 </li>
 `;
 
 
-document.getElementById("awards-title").innerHTML=
+
+document.getElementById("intern3-title").innerHTML =
+"中国农业银行苏州分行";
+
+
+document.getElementById("intern3-meta").innerHTML =
+"公司金融部实习生 · 2024年1月—2024年2月";
+
+
+document.getElementById("intern3-text").innerHTML =
+"参与企业贷款客户尽职调查及评价报告撰写，包括股权结构、财务分析和合规分析。";
+
+
+
+
+
+
+// Competition
+
+
+document.getElementById("competition-title").innerHTML =
 "荣誉与竞赛";
 
 
-document.getElementById("awards").innerHTML=
+
+document.getElementById("competition1-text").innerHTML =
+"全国大学生数学建模竞赛福建省本科组一等奖（2024）。负责数学建模、模型构建以及论文撰写。";
+
+
+
+document.getElementById("competition2-text").innerHTML =
+"第十四届全国大学生市场调查与分析大赛全国三等奖（2024）。担任负责人，开展宠物殡葬市场调研，负责选题、问卷设计、数据分析以及汇报展示。";
+
+
+
+
+
+
+// Practice
+
+
+document.getElementById("practice-title").innerHTML =
+"社会实践与志愿服务";
+
+
+document.getElementById("practice-text").innerHTML =
+"参与宁夏隆德暑期支教社会实践项目，负责课程教学、活动组织、物资采购及财务报销。团队获得2023年‘镜头中的三下乡’优秀视频团队等荣誉。";
+
+
+
+
+
+
+// Campus
+
+
+document.getElementById("campus-title").innerHTML =
+"学生工作";
+
+
+document.getElementById("campus-text").innerHTML =
+"担任厦门大学经济学院金融学一班班长（2023-2026），负责班级事务组织、奖助学金相关工作以及师生沟通协调。";
+
+
+
+
+
+
+
+// Skills
+
+
+document.getElementById("skill-title").innerHTML =
+"研究兴趣与技能";
+
+
+
+document.querySelector(".tags").innerHTML =
+
 `
-<li>
-第十四届全国大学生市场调查与分析大赛全国三等奖（2024）
-</li>
+<span class="tag">金融市场</span>
 
-<li>
-全国大学生数学建模竞赛福建省本科组一等奖（2024）
-</li>
+<span class="tag">公司金融</span>
 
-<li>
-第十五届全国大学生市场调查与分析大赛福建省二等奖（2025）
-</li>
+<span class="tag">金融计量</span>
+
+<span class="tag">时间序列分析</span>
+
+<span class="tag">投资研究</span>
+
+<span class="tag">数学建模</span>
+
+<span class="tag">数据分析</span>
 `;
-
-
-document.getElementById("practice-title").innerHTML=
-"社会实践";
-
-
-document.getElementById("practice").innerHTML=
-"参与宁夏隆德暑期支教社会实践项目，团队获得2023年‘镜头中的三下乡’优秀视频团队等荣誉。";
-
-
-document.getElementById("interest-title").innerHTML=
-"研究兴趣";
-
-
-document.getElementById("interest").innerHTML=
-"公司金融、金融市场、计量经济学、人工智能金融应用以及数据分析。";
 
 
 
 }
+
+
+
+
 
 
 else{
 
+
 location.reload();
 
+
 }
 
 
+
 }
+
 
 
 </script>
 
-
 </body>
-
 </html>
