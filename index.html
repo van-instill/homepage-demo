@@ -1,500 +1,368 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liu Jiaxiang | Personal Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<title>Liu Jiaxiang | Personal Homepage</title>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         "Microsoft YaHei", Arial, sans-serif;
-            background: #f5f7fa;
-            color: #333;
-            line-height: 1.7;
-        }
+<style>
 
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Arial","Microsoft YaHei",sans-serif;
+}
 
-        /* Header */
-        header {
-            background: #1f3c88;
-            color: white;
-            padding: 60px 0;
-        }
+body{
+    background:#f5f7fb;
+    color:#333;
+}
 
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-        }
+.container{
+    width:85%;
+    max-width:1000px;
+    margin:40px auto;
+}
 
-        .intro h1 {
-            font-size: 42px;
-            margin-bottom: 8px;
-        }
+header{
+    background:#1f3c88;
+    color:white;
+    padding:40px;
+    border-radius:15px;
+}
 
-        .intro h2 {
-            font-size: 20px;
-            font-weight: normal;
-            opacity: 0.9;
-            margin-bottom: 20px;
-        }
+header h1{
+    font-size:36px;
+}
 
-        .intro p {
-            max-width: 650px;
-            font-size: 16px;
-            opacity: 0.95;
-        }
+header p{
+    margin-top:10px;
+    font-size:16px;
+}
 
-        .contact {
-            text-align: right;
-            font-size: 14px;
-            line-height: 2;
-        }
+.lang{
+    margin-top:20px;
+}
 
-        /* Main */
-        main {
-            padding: 40px 0;
-        }
+button{
+    padding:8px 18px;
+    margin-right:10px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
 
-        section {
-            background: white;
-            padding: 30px 35px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
+.card{
+    background:white;
+    margin-top:25px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
 
-        section h2 {
-            color: #1f3c88;
-            font-size: 24px;
-            margin-bottom: 20px;
-            border-left: 5px solid #1f3c88;
-            padding-left: 12px;
-        }
+.card h2{
+    color:#1f3c88;
+    margin-bottom:15px;
+}
 
-        .item {
-            margin-bottom: 22px;
-        }
+.card p,li{
+    line-height:1.8;
+}
 
-        .item:last-child {
-            margin-bottom: 0;
-        }
+ul{
+    padding-left:20px;
+}
 
-        .item-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #222;
-        }
+</style>
 
-        .item-meta {
-            color: #777;
-            font-size: 14px;
-            margin: 3px 0 8px;
-        }
-
-        .item p {
-            font-size: 15px;
-            color: #555;
-        }
-
-        ul {
-            padding-left: 22px;
-        }
-
-        li {
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        .highlight {
-            color: #1f3c88;
-            font-weight: bold;
-        }
-
-        /* Skills */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            background: #eef3ff;
-            color: #1f3c88;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: #888;
-            font-size: 14px;
-        }
-
-        @media (max-width: 700px) {
-            .header-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .contact {
-                text-align: left;
-            }
-
-            .intro h1 {
-                font-size: 34px;
-            }
-
-            section {
-                padding: 25px 20px;
-            }
-        }
-    </style>
 </head>
+
 
 <body>
 
+<div class="container">
+
+
 <header>
-    <div class="container header-content">
 
-        <div class="intro">
-            <h1>Liu Jiaxiang</h1>
-            <h2>刘佳翔 · Finance & Data Analysis</h2>
+<h1 id="name">
+Liu Jiaxiang
+</h1>
 
-            <p>
-                Finance student with interests in financial analysis,
-                econometrics, investment research and data analysis.
-                Currently pursuing graduate study at Fudan University.
-            </p>
-        </div>
+<p id="title">
+Finance Graduate Student | Financial Engineering
+</p>
 
-        <div class="contact">
-            <div>📍 Shanghai, China</div>
-            <div>📧 liujiaxiang@stu.xmu.edu.cn</div>
-            <div>🎓 Fudan University</div>
-        </div>
+<p id="school">
+School of Economics, Fudan University
+</p>
 
-    </div>
+
+<div class="lang">
+
+<button onclick="changeLang('en')">
+English
+</button>
+
+<button onclick="changeLang('zh')">
+Chinese
+</button>
+
+</div>
+
 </header>
 
 
-<main class="container">
 
-    <!-- About Me -->
-    <section>
-        <h2>About Me</h2>
+<div class="card">
 
-        <p>
-            I am a finance student with a strong academic background and
-            practical experience in financial research, data analysis and
-            investment research. I enjoy using quantitative methods to
-            understand economic and financial problems.
-        </p>
+<h2 id="about-title">
+About Me
+</h2>
 
-        <p style="margin-top: 12px;">
-            My academic interests include corporate finance, financial
-            markets, econometrics and data-driven financial analysis.
-        </p>
-    </section>
+<p id="about">
+I am a master's student in Finance at the School of Economics, Fudan University.
+My research interests include financial analysis, corporate finance, econometrics and data-driven decision making.
+</p>
+
+</div>
 
 
-    <!-- Education -->
-    <section>
-        <h2>Education</h2>
-
-        <div class="item">
-            <div class="item-title">
-                Fudan University · School of Economics
-            </div>
-
-            <div class="item-meta">
-                Master's Student in Finance · 2026 – Present
-            </div>
-
-            <p>
-                Graduate study in finance with a focus on financial analysis,
-                quantitative methods and data analysis.
-            </p>
-        </div>
-
-        <div class="item">
-            <div class="item-title">
-                Xiamen University · School of Economics
-            </div>
-
-            <div class="item-meta">
-                Bachelor of Finance · Sep 2022 – Jun 2026
-            </div>
-
-            <p>
-                GPA: <span class="highlight">3.95/4.00</span> ·
-                Major Ranking: <span class="highlight">2/79</span> ·
-                Weighted Average: <span class="highlight">92.56</span> ·
-                CET-6: 561
-            </p>
-
-            <p style="margin-top: 8px;">
-                Selected courses: Financial Engineering, Econometrics,
-                Mathematical Finance, Financial Statement Analysis,
-                International Finance and Principles of Economics.
-            </p>
-        </div>
-    </section>
 
 
-    <!-- Research -->
-    <section>
-        <h2>Research Experience</h2>
+<div class="card">
 
-        <div class="item">
-            <div class="item-title">
-                Venture Capital and Corporate Financialization
-            </div>
+<h2 id="education-title">
+Education
+</h2>
 
-            <div class="item-meta">
-                Independent Research · Unpublished
-            </div>
+<ul id="education">
 
-            <p>
-                An empirical study based on Chinese listed firms from
-                2010–2023. The research examines how venture capital affects
-                corporate financialization through financing constraints,
-                innovation capability and managerial myopia.
-            </p>
+<li>
+Fudan University, School of Economics
+<br>
+Master's Student in Finance (2026 - Present)
+</li>
 
-            <p style="margin-top: 8px;">
-                Robustness tests, endogeneity analysis and heterogeneity
-                analysis were conducted to validate the findings.
-            </p>
-        </div>
+<li>
+Xiamen University, School of Economics
+<br>
+Bachelor of Finance (2022 - 2026)
+</li>
 
-        <div class="item">
-            <div class="item-title">
-                Fujian High-Quality Development Research Project
-            </div>
+</ul>
 
-            <div class="item-meta">
-                State Grid Fujian Electric Power Company · Mar 2025 – Jul 2025
-            </div>
-
-            <p>
-                Participated in a provincial-level research project using
-                electricity consumption data to construct high-quality
-                development indicators for Fujian Province and analyze
-                regional economic development.
-            </p>
-        </div>
-    </section>
+</div>
 
 
-    <!-- Internship -->
-    <section>
-        <h2>Internship Experience</h2>
-
-        <div class="item">
-            <div class="item-title">
-                China Everbright Securities · Non-Banking Financial Team
-            </div>
-
-            <div class="item-meta">
-                Intern · Feb 2025 – May 2025
-            </div>
-
-            <ul>
-                <li>
-                    Analyzed the causes of Sun Life Everbright's 2024 losses
-                    from a revenue-expenditure perspective.
-                </li>
-                <li>
-                    Conducted analysis of asset classification under IFRS 9
-                    and provided recommendations on investment and accounting.
-                </li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <div class="item-title">
-                Northeast Securities · Food & Beverage Team
-            </div>
-
-            <div class="item-meta">
-                Intern · Nov 2024 – Feb 2025
-            </div>
-
-            <ul>
-                <li>
-                    Independently completed a 60-page in-depth research
-                    report on Uni-President China Holdings Ltd.
-                </li>
-                <li>
-                    Analyzed financial performance, industry trends,
-                    brand value, product portfolio and distribution channels.
-                </li>
-                <li>
-                    Concluded the research with a "Buy" investment rating.
-                </li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <div class="item-title">
-                Agricultural Bank of China · Gusu Branch
-            </div>
-
-            <div class="item-meta">
-                Corporate Finance Department · Jan 2024 – Feb 2024
-            </div>
-
-            <p>
-                Participated in due diligence and evaluation reports for
-                corporate loan clients, including equity analysis,
-                financial statement analysis and compliance analysis.
-            </p>
-        </div>
-    </section>
 
 
-    <!-- Competitions -->
-    <section>
-        <h2>Competitions</h2>
+<div class="card">
 
-        <div class="item">
-            <div class="item-title">
-                China Undergraduate Mathematical Contest in Modeling
-            </div>
+<h2 id="experience-title">
+Academic & Leadership Experience
+</h2>
 
-            <div class="item-meta">
-                Provincial First Prize · 2024
-            </div>
+<ul id="experience">
 
-            <p>
-                Built a multi-stage optimal crop planting strategy using
-                Mixed Integer Programming and robust optimization.
-                Responsible for mathematical modeling and final paper writing.
-            </p>
-        </div>
+<li>
+Class Monitor of Finance Class 1, School of Economics, Xiamen University (2023-2026)
+</li>
 
-        <div class="item">
-            <div class="item-title">
-                National College Student Market Research and Analysis Competition
-            </div>
+<li>
+Ranked 2nd in the undergraduate major and awarded National Scholarship for two consecutive years.
+</li>
 
-            <div class="item-meta">
-                National Third Prize · Team Leader · 2024
-            </div>
+<li>
+Participated in research training and financial analysis projects.
+</li>
 
-            <p>
-                Conducted interviews and questionnaire analysis to study
-                the pet funeral market in Xiamen. Responsible for topic
-                selection, presentation, sampling design and data quality checks.
-            </p>
-        </div>
-    </section>
+</ul>
+
+</div>
 
 
-    <!-- Social Practice -->
-    <section>
-        <h2>Social Practice & Volunteering</h2>
-
-        <div class="item">
-            <div class="item-title">
-                "Heron & Child: Together on the Journey"
-            </div>
-
-            <div class="item-meta">
-                Longde County, Ningxia · Jul 2023
-            </div>
-
-            <p>
-                Participated in a summer public education program in
-                Longde County, Ningxia. Responsibilities included teaching,
-                ceremony planning, procurement and financial reimbursement.
-                The team served more than 40 participants and received the
-                National "Three Goes to the Countryside" Excellent Video Team Award.
-            </p>
-        </div>
-    </section>
 
 
-    <!-- Campus -->
-    <section>
-        <h2>Campus Involvement</h2>
+<div class="card">
 
-        <div class="item">
-            <div class="item-title">
-                Class Monitor · Finance Class 1, Class of 2022
-            </div>
+<h2 id="awards-title">
+Honors & Competitions
+</h2>
 
-            <div class="item-meta">
-                Xiamen University · Sep 2023 – Jun 2026
-            </div>
+<ul id="awards">
 
-            <p>
-                Organized more than 10 class activities and assisted with
-                scholarship and financial aid affairs. Sent more than
-                2,000 class-related messages and supported communication
-                between students and faculty.
-            </p>
-        </div>
+<li>
+National Third Prize, 14th "Challenge Cup" Market Research and Analysis Competition (2024)
+</li>
 
-        <div class="item">
-            <div class="item-title">
-                Youth Volunteer Association · School of Economics
-            </div>
+<li>
+First Prize, Fujian Undergraduate Mathematical Modeling Competition (2024)
+</li>
 
-            <div class="item-meta">
-                Team Member · Sep 2022 – Jun 2023
-            </div>
+<li>
+Second Prize, 15th "Challenge Cup" Market Research and Analysis Competition (2025)
+</li>
 
-            <p>
-                Participated in curriculum design, volunteer recruitment
-                and event organization. Organized more than 20 activities,
-                serving over 500 participants with approximately 200 hours
-                of volunteer service.
-            </p>
-        </div>
-    </section>
+</ul>
+
+</div>
 
 
-    <!-- Interests -->
-    <section>
-        <h2>Interests & Skills</h2>
 
-        <div class="tags">
-            <span class="tag">Finance</span>
-            <span class="tag">Financial Analysis</span>
-            <span class="tag">Econometrics</span>
-            <span class="tag">Data Analysis</span>
-            <span class="tag">Investment Research</span>
-            <span class="tag">Mathematical Modeling</span>
-            <span class="tag">Quantitative Research</span>
-        </div>
-    </section>
+<div class="card">
 
-</main>
+<h2 id="practice-title">
+Social Practice
+</h2>
+
+<p id="practice">
+
+Participated in a summer teaching program in Longde, Ningxia.
+The team received several honors including the Excellent Team Award of "Three Rural Areas" Social Practice.
+</p>
 
 
-<footer>
-    <div class="container">
-        © 2026 Liu Jiaxiang · Personal Homepage
-    </div>
-</footer>
+</div>
+
+
+
+<div class="card">
+
+<h2 id="interest-title">
+Research Interests
+</h2>
+
+<p id="interest">
+
+Corporate Finance, Financial Markets, Econometrics,
+Artificial Intelligence Applications in Finance, and Data Analysis.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<script>
+
+
+function changeLang(lang){
+
+
+if(lang==="zh"){
+
+
+document.getElementById("name").innerHTML="刘佳翔";
+
+document.getElementById("title").innerHTML=
+"金融硕士研究生 | 金融工程方向";
+
+document.getElementById("school").innerHTML=
+"复旦大学经济学院";
+
+
+document.getElementById("about-title").innerHTML="个人简介";
+
+document.getElementById("about").innerHTML=
+"我目前就读于复旦大学经济学院金融硕士项目。本科毕业于厦门大学经济学院金融学专业。研究兴趣主要集中于金融分析、公司金融、计量经济学以及数据驱动的金融决策。";
+
+
+document.getElementById("education-title").innerHTML="教育经历";
+
+document.getElementById("education").innerHTML=
+`
+<li>
+复旦大学经济学院<br>
+金融硕士研究生（2026年至今）
+</li>
+
+<li>
+厦门大学经济学院<br>
+金融学本科（2022-2026）
+</li>
+`;
+
+
+document.getElementById("experience-title").innerHTML=
+"学术与学生工作经历";
+
+
+document.getElementById("experience").innerHTML=
+`
+<li>
+担任厦门大学经济学院金融学一班班长（2023-2026）
+</li>
+
+<li>
+本科专业排名第2，连续两年获得国家奖学金
+</li>
+
+<li>
+参与金融研究、数据分析及学科竞赛等实践活动
+</li>
+`;
+
+
+document.getElementById("awards-title").innerHTML=
+"荣誉与竞赛";
+
+
+document.getElementById("awards").innerHTML=
+`
+<li>
+第十四届全国大学生市场调查与分析大赛全国三等奖（2024）
+</li>
+
+<li>
+全国大学生数学建模竞赛福建省本科组一等奖（2024）
+</li>
+
+<li>
+第十五届全国大学生市场调查与分析大赛福建省二等奖（2025）
+</li>
+`;
+
+
+document.getElementById("practice-title").innerHTML=
+"社会实践";
+
+
+document.getElementById("practice").innerHTML=
+"参与宁夏隆德暑期支教社会实践项目，团队获得2023年‘镜头中的三下乡’优秀视频团队等荣誉。";
+
+
+document.getElementById("interest-title").innerHTML=
+"研究兴趣";
+
+
+document.getElementById("interest").innerHTML=
+"公司金融、金融市场、计量经济学、人工智能金融应用以及数据分析。";
+
+
+
+}
+
+
+else{
+
+location.reload();
+
+}
+
+
+}
+
+
+</script>
+
 
 </body>
+
 </html>
